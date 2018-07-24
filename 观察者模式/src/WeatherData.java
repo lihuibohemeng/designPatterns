@@ -10,6 +10,8 @@ import java.util.ArrayList;
  * Time: 11:21
  * To change this template use File | Settings | File Templates.
  */
+//（1）当一个对象的数据更新时需要通知其他对象，但这个对象又不希望和被通知的那些对象形成紧耦合。
+//（2）当一个对象的数据更新时，这个对象需要让其他对象也各自更新自己的数据，但这个对象不知道具体有多少对象需要更新数据。
 public class WeatherData implements Subject {
     private ArrayList observers;
     private float temperature;
